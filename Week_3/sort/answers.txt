@@ -1,0 +1,10 @@
+sort1 uses: Bubble
+How do you know?: It overall faster than Selection but faster than Merge algorithm as it compares 2 values at a time, the lower value moves to the left of the bigger value
+
+sort2 uses: Merge
+How do you know?: It has the shortest time in resolving random.txt files
+
+sort3 uses: Selection
+How do you know?: Selection algorithm is overall the slowest among all as it needs to go through every single line everytime to determine the lowest number
+
+
