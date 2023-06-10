@@ -1,0 +1,2 @@
+Converting every char in input to ASCII
+Convert ASCII to binary numbers (with 8 bits)
