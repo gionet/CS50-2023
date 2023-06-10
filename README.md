@@ -8,3 +8,88 @@
 <p>It is important to address the topic of <a href="https://cs50.harvard.edu/x/2023/honesty/" rel="nofollow">Academic Honesty. </p>
 <p>These solutions are intended to be shared within the community as a point of reference, guidance and discussions, explicitly emphasizing that they should not be used for cheating purposes.</p>
  
+<h2> Table of Content </h2>
+
+<table>
+  <tr>
+    <h3> Week 1: C </h3>
+  <ul>
+  <li>cash</li>
+  <li>credit</li>
+  <li>hello</li>
+  <li>mario-less</li>
+  <li>mario-more</li>
+</ul>
+  
+  
+</table>
+
+<h3> Week 2: Arrays </h3>
+<ul>
+  <li>bulbs</li>
+  <li>caesar</li>
+  <li>hours</li>
+  <li>no-vowels</li>
+</ul>
+
+<h3> Week 3: Algorithms </h3>
+<ul>
+  <li>atoi</li>
+  <li>max</li>
+  <li>plurality</li>
+  <li>runoff</li>
+  <li>snackbar</li>
+  <li>sort</li>
+  <li>temps</li>
+  <li>tideman</li>
+</ul>
+
+<h3> Week 4: Memory </h3>
+<ul>
+  <li>bottomup</li>
+  <li>filter-less</li>
+  <li>filter-more</li>
+  <li>license</li>
+  <li>recover</li>
+  <li>reverse</li>
+  <li>smiley</li>
+  <li>volume</li>
+</ul>
+
+<h3> Week 5: Data Structures </h3>
+<ul>
+  <li>inheritance</li>
+  <li>speller</li>
+  <li>trie</li>
+</ul>
+
+<h3> Week 6: Python </h3>
+<ul>
+  <li>bank</li>
+  <li>dna</li>
+  <li>figlet</li>
+  <li>jar</li>
+</ul>
+
+<h3> Week 7: SQL </h3>
+<ul>
+  <li>favorites</li>
+  <li>movies</li>
+  <li>prophecy</li>
+  <li>songs</li>
+</ul>
+
+<h3> Week 8: HTML, CSS, JavaScript </h3>
+<ul>
+  <li>homepage</li>
+  <li>redo</li>
+  <li>trivia</li>
+</ul>
+
+<h3> Week 9: Flask </h3>
+<ul>
+  <li>birthdays</li>
+  <li>finance</li>
+  <li>helloflask</li>
+</ul>
+
