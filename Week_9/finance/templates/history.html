@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <form action="/history" method="post">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-start">Symbol</th>
+                        <th class="text-start">Name</th>
+                        <th class="text-end">Shares</th>
+                        <th class="text-end">Price</th>
+                        <th class="text-end">Buy/Sell</th>
+                        <th class="text-end">Transacted</th>
+                    </tr>
+                </thead>
+            <tbody>
+                    {% for row in database %}
+                    <tr>
+                        <td class="text-start">{{ row["symbol"] }}</td>
+                        <td class="text-start">{{ row["name"] }}</td>
+                        <td class="text-end">{{ row["shares"] }}</td>
+                        <td class="text-end">{{ row["price"] }}</td>
+                        <td class="text-end red" style ="color: {% if row['buy_sell'] == 'SELL' %}red{% else %}cornflowerblue{% endif %};">{{ row["buy_sell"] }}</td>
+                        <td class="text-end">{{ row["Timestamp"] }}</td>
+                    </tr>
+                    {% endfor %}
+            </tbody>
+            </table>
+        </main>
+
+{% endblock %}

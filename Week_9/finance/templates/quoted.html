@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}Quoted{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="get">
+        <div class="d-flex flex-column">
+            <h1>Name : {{ quoted["name"]}}</h1>
+            <h1>Symbol : {{ quoted["symbol"]}}</h1>
+            <h1>{{ quoted["price"] | usd }}</h1>
+        </div>
+    </form>
+{% endblock %}
