@@ -1,0 +1,5 @@
+prompt user for height
+if height is less than 1 or greater than 8, then go back to step 1
+interate from 1 through "height":
+    on interation "i", print "i"  hashes and then a new line ["i" + 1] until reaches "height"
+    

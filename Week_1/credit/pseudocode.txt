@@ -1,0 +1,30 @@
+AMEX
+Length: 15-digit
+Starts: 34, 37
+
+
+MASTERCARD
+length: 16-digit
+Starts: 51,52,53,54,55
+
+
+VISA
+Length 13 && 16 digits
+Starts: 4
+
+INVALID
+
+
+Checksum
+1. Multiply every other digit by 2, starting with second-to-last digit.
+2. Add those products digits together.
+3. Add the sum to the sum of the digits that weren't multiplied by 2.
+4. If the total's last digit is 0, number is valid.
+
+TODO
+1. Prompt for input
+2. Calculate checksum
+3. Check for card length and starting digits
+4. Print AMEX, MASTERCARD, VISA, or INVALID
+
+
