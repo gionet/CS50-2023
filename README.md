@@ -30,6 +30,11 @@
   <li>caesar</li>
   <li>hours</li>
   <li>no-vowels</li>
+  <li>password</li>
+  <li>readability</li>
+  <li>scrabble</li>
+  <li>substitution</li>
+  <li>wordle</li>
 </ul>
 
 <h3> Week 3: Algorithms </h3>
@@ -69,6 +74,15 @@
   <li>dna</li>
   <li>figlet</li>
   <li>jar</li>
+  <li>sentimental-cash</li>
+  <li>sentimental-credit</li>
+  <li>sentimental-hello</li>
+  <li>sentimental-mario-less</li>
+  <li>sentimental-mario-more</li>
+  <li>sentimental-readability</li>
+  <li>seven-day-average</li>
+  <li>taqueria</li>
+  <li>world-cup</li>
 </ul>
 
 <h3> Week 7: SQL </h3>
