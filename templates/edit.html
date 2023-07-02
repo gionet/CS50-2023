@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block title %}Edit{% endblock %}
+
+{% block main %}
+    {% for row in edit %}
+    <form action="/edit" method="post">
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">S/N</label>
+            <div class = "col-sm-2">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="serial" name="serial" value="{{ row['serial_num'] }}" readonly>
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Ticket Ref</label>
+            <div class = "col-sm-2">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="ref" name="ref" value="{{ row['ticket_ref'] }}" type="text">
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Device</label>
+            <div class="col-sm-2">
+                <select class="dropdown-toggle form-select" id="device" name="device" autofocus class="form-control mx-auto w-auto">
+                    <option value="{{ row['Device'] }}" disabled selected>{{ row['Device'] }}</option>
+                    <option value="1G">1G</option>
+                    <option value="1E">1E</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Subscription Type</label>
+            <div class="col-sm-2">
+                <select class="dropdown-toggle form-select" id="subtype" name="subtype" autofocus class="form-control mx-auto w-auto">
+                    <option value="{{ row['subs_type'] }}" disabled selected>{{ row['subs_type'] }}</option>
+                    <option value="Enterprise">Enterprise</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Expenditure Type</label>
+            <div class="col-sm-2">
+                <select class="dropdown-toggle form-select" id="exptype" name="exptype" autofocus class="form-control mx-auto w-auto">
+                    <option value="" disabled selected>{{ row['expense_type'] }}</option>
+                    <option value="CAPEX">CAPEX</option>
+                    <option value="OPEX">OPEX</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Expiration Date</label>
+            <div class = "col-sm-2">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="expiry" name="expiry" value="{{ formatted_date }}" type="date">
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Client</label>
+            <div class = "col-sm-2">
+            <select class="dropdown-toggle form-select" id="client" name="client" autofocus class="form-control mx-auto w-auto" type="text">
+                <option disabled selected>{{ row['client'] }}</option>
+                {% for row in client_db %}    
+                <option value="{{ row['name'] }}">{{ row['name'] }}</option>
+                {% endfor %}
+            </select>
+            </div>
+        </div>
+        <div class="mb-3 form-group row">
+            <label for="symbol" class="col-sm-5 col-form-label text-end">Addendum</label>
+            <div class = "col-sm-2">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="add" name="add" placeholder="Device" value="{{ row['Addendum'] }}" type="text">
+            </div>
+        </div>
+        <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+    {% endfor %}
+{% endblock %}

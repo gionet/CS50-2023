@@ -1,0 +1,2 @@
+ALTER TABLE tracking
+ADD COLUMN user_id INTEGER NOT NULL;
