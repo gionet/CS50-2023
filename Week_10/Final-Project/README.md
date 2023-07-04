@@ -1,26 +1,33 @@
-Gionet Vendor
-Video Demo: https://www.youtube.com/watch?v=CDDvZ4ZmHB4
+Gionet Vendor  
+Video Demo: https://www.youtube.com/watch?v=CDDvZ4ZmHB4  
 Description: Inventory Management System
 
 # Overview:
 Gionet Vendor is a replica of an inhouse Inventory Management System.
 The main purpose of this creation is to centralize and ease small vendor/business owners having to manually track client's subscription status on paper/excelsheet.
 
+```
 This software has the functions as below:
 1. Inserting new clients to the list
 2. Displaying whole client list
 3. Inserting client's order
 4. To monitor and track client's order status
+```
 
 Below are the detailed technical aspects of the functionality:
 
 ### Register _navbar_ - Account Registration
+```
 - Register an account to login and use the website
+```
 
 ### Login _navbar_ - Login
+```
 - Login with the account credentials that was created from Register
+```  
 
 ### Gionet Vendor _navbar_ - Dashboard/Home Page
+```
 - A view of all client's order sorted by days left to expiration on "Expired in" column. (sorted based on ascending order)
 - Main purpose of this dashboard is to have a view on which order is expiring so staff's can do the needful (e.g. follow up client on contract renewal, etc.)
 
@@ -28,6 +35,7 @@ Below are the detailed technical aspects of the functionality:
 EDIT FUNCTION
 - Displays the previous information to edit and update the entry upon submit
 ```
+```  
 
 ### Onboarding _navbar_ - Record new clients information
 - All columns is compulsory to be filled
