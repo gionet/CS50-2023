@@ -107,3 +107,8 @@
   <li>helloflask</li>
 </ul>
 
+<h3> Week 10: Final Project </h3>
+<ul>
+  <li>Replica Inventory Management System</li>
+</ul>
+
